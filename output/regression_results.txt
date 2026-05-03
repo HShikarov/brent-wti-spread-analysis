@@ -1,0 +1,30 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                 spread   R-squared:                       0.719
+Model:                            OLS   Adj. R-squared:                  0.715
+Method:                 Least Squares   F-statistic:                     76.28
+Date:                Sat, 02 May 2026   Prob (F-statistic):           1.78e-45
+Time:                        13:50:05   Log-Likelihood:                -587.75
+No. Observations:                 328   AIC:                             1186.
+Df Residuals:                     323   BIC:                             1204.
+Df Model:                           4                                         
+Covariance Type:                  HC3                                         
+==================================================================================
+                     coef    std err          z      P>|z|      [0.025      0.975]
+----------------------------------------------------------------------------------
+Intercept          0.5700      1.616      0.353      0.724      -2.596       3.736
+cushing_stocks    -0.0089      0.011     -0.819      0.413      -0.030       0.012
+refinery_util      0.0170      0.019      0.918      0.358      -0.019       0.053
+crude_imports     -0.0002      0.000     -1.487      0.137      -0.000     6.1e-05
+spread_lag1        0.8736      0.075     11.684      0.000       0.727       1.020
+==============================================================================
+Omnibus:                      181.488   Durbin-Watson:                   2.107
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):             6543.493
+Skew:                           1.620   Prob(JB):                         0.00
+Kurtosis:                      24.640   Cond. No.                     1.50e+05
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity robust (HC3)
+[2] The condition number is large, 1.5e+05. This might indicate that there are
+strong multicollinearity or other numerical problems.
